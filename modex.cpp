@@ -12,9 +12,9 @@ long long binaryExponentiation(long long x, long long y, long long n) {
     }
     long long res = binaryExponentiation(x, y / 2, n);
     if (y % 2) {
-        return (res * res * x) % n;
+        return ((res * res * x) % n);
     } else {
-        return (res * res) % n;
+        return ((res * res) % n);
     }
 }
 
