@@ -24,7 +24,7 @@ int main() {
     long long b{}, p{}, m{}, ans{};
     while (cin >> b >> p >> m) {
         ans = binaryExponentiation(b, p, m);
-        cout << (ans % m)<< endl;
+        cout << (ans % m) << endl;
     }
     return 0;
 }
