@@ -14,8 +14,7 @@ void print(int x, int y, int r) {
 
 void solve(int nc) {
     int s{}, d{}, x{}, y{}, nodes{};
-    bool present[100000];
-    memset(present, false, sizeof(present));
+    bool present[100000] = {};
     vector<int> adj_matrix[100000];
     for (int i = 0; i < nc; ++i) {
         cin >> s >> d;
@@ -34,10 +33,8 @@ void solve(int nc) {
         if (x == 0 and y == 0) {
             break;
         }
-        bool visited[100000];
-        memset(visited, false, sizeof(visited));
-        int distance[100000] = {};
-        int reachable{1};
+        bool visited[100000] = {};
+        int reachable{1}, distance[100000] = {};
         queue<int> q;
         q.push(x);
         visited[x] = true;
